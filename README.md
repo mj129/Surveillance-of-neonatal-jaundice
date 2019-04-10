@@ -2,7 +2,7 @@ Surveillance of neonatal jaundice using sternal skin images via deep learning
 
 # Overview
 
-This code uses convolutional neural network to estimate neonatal jaundice using sternal skin images.
+This code uses convolutional neural network to estimate neonatal jaundice of sternal skin images.
 
 # Contents
 
