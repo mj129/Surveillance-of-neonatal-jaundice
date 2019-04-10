@@ -7,8 +7,11 @@ This code uses convolutional neural network to estimate neonatal jaundice of ste
 # Contents
 
 imgs: 12 skin images of 4 newborns with labels ('imgs/labels.csv'), and the prediction results of these images ('imgs/results.csv').
+
 regression.py: The train code.
+
 test.py: The test code.
+
 utils.py: Some functions.
 
 # System Requirements
