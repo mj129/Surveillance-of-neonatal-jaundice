@@ -38,11 +38,8 @@ numpy
 opencv
 
 # Instructions
-Since we have provided the trained weight of the proposed network in folder 'model', 
-you can run 'test.py' directly to estimate the bilirubin value of images in folder 'imgs'.
+We have provided the trained weight of the proposed network in https://drive.google.com/file/d/1Q_D_Oh59XiZEsjc0CqZMs8KSm4oyxGy_/view?usp=sharing, you can download the weight and run 'test.py' directly to estimate the bilirubin value of images in folder 'imgs'.
 We also provide the prediction results of 'test.py' for these images in 'imgs/results.csv'.
 
 The 'regression.py' is used to train the proposed network, but the training data is too large to 
 provide, so 'regression.py' may not run in your computer.
-
-We will put the code in an open source repository soon. 
