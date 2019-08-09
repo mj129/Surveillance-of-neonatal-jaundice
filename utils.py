@@ -102,9 +102,9 @@ def next_batch(DATA, Dir, batch_size):
         image = cv2.resize(image, dsize=(224, 224))
         pred_mask = cv2.resize(pred_mask, dsize=(28, 28))
         pred_mask = np.expand_dims(pred_mask, axis=2)
-        if bvalue * 400 / 17.1 <= 5:
+        if bvalue * 400 / 17.1 < 5:
             labels[count, :] = [1, 0, 0]
-        elif bvalue * 400 / 17.1 > 5 and bvalue * 400 / 17.1 < 15:
+        elif bvalue * 400 / 17.1 >= 5 and bvalue * 400 / 17.1 <= 17:
             labels[count, :] = [0, 1, 0]
         else:
             labels[count, :] = [0, 0, 1]
@@ -146,9 +146,9 @@ def next_batch_test(DATA, Dir, batch_size):
         pred_mask = np.expand_dims(pred_mask, axis=2)
         #img, pred_mask = hp(image)
 
-        if bvalue * 400 / 17.1 <= 5:
+        if bvalue * 400 / 17.1 < 5:
             labels[count, :] = [1, 0, 0]
-        elif bvalue * 400 / 17.1 > 5 and bvalue * 400 / 17.1 < 15:
+        elif bvalue * 400 / 17.1 >= 5 and bvalue * 400 / 17.1 <= 17:
             labels[count, :] = [0, 1, 0]
         else:
             labels[count, :] = [0, 0, 1]
@@ -177,9 +177,9 @@ def batch_test(DATA, Dir, batch_size):
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         image = cv2.resize(image, dsize=(224, 224))
 
-        if bvalue * 400 / 17.1 <= 5:
+        if bvalue * 400 / 17.1 < 5:
             labels[count, :] = [1, 0, 0]
-        elif bvalue * 400 / 17.1 > 5 and bvalue * 400 / 17.1 < 15:
+        elif bvalue * 400 / 17.1 >= 5 and bvalue * 400 / 17.1 <= 17:
             labels[count, :] = [0, 1, 0]
         else:
             labels[count, :] = [0, 0, 1]
