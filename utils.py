@@ -102,12 +102,16 @@ def next_batch(DATA, Dir, batch_size):
         image = cv2.resize(image, dsize=(224, 224))
         pred_mask = cv2.resize(pred_mask, dsize=(28, 28))
         pred_mask = np.expand_dims(pred_mask, axis=2)
+        
+        # We classify the newborns into three categories according to total serum bilirubin (TSB): 
+        # newborns with a TSB < 5 mg/dL, newborns with a TSB ≥ 5 mg/dL and a TSB ≤ 17 mg/dL, and those with a TSB > 17 mg/dL.
         if bvalue * 400 / 17.1 < 5:
             labels[count, :] = [1, 0, 0]
         elif bvalue * 400 / 17.1 >= 5 and bvalue * 400 / 17.1 <= 17:
             labels[count, :] = [0, 1, 0]
         else:
             labels[count, :] = [0, 0, 1]
+            
         id_values[count] = id_value
         bin_values[count] = bin_value
         bvalues[count] = bvalue
