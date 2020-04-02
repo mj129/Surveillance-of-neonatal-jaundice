@@ -1,4 +1,4 @@
-The code for paper 'Surveillance of neonatal jaundice using sternal skin images via deep learning'. The paper is currently under review and has not been formally accepted.
+This repository is the code for paper 'Surveillance of neonatal jaundice using sternal skin images via deep learning'. The paper is currently under review and has not been formally accepted.
 
 # Overview
 
