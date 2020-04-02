@@ -1,4 +1,4 @@
-Surveillance of neonatal jaundice using sternal skin images via deep learning
+The code for paper 'Surveillance of neonatal jaundice using sternal skin images via deep learning'. The paper is currently under review and has not been formally accepted.
 
 # Overview
 
@@ -33,10 +33,15 @@ The code has been tested on Linux operating systems.
 Users should install the following python packages prior to run the code:
 
 python3.5
+
 tensorflow-gpu
+
 keras
+
 pandas
+
 numpy
+
 opencv
 
 # Instructions
